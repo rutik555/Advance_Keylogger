@@ -1,36 +1,84 @@
 # Keylogger Project
 
-## Introduction
+This project implements a keylogger that logs keystrokes, clipboard data, screenshots, and audio recordings. The collected data is encrypted and stored in a MySQL database. The data is also sent via email to a specified email address.
 
-This project is a keylogger that logs keystrokes, system information, clipboard data, audio recordings, and screenshots. The collected data is stored in a MySQL database and also sent via email.
+## Features
 
-## Prerequisites
-
-- Python 3.x
-- MySQL server
-- Required Python packages (listed in `requirements.txt`)
+- Logs keystrokes
+- Captures clipboard data
+- Takes screenshots
+- Records audio
+- Collects system information
+- Encrypts data before storing in MySQL database
+- Sends encrypted data via email
 
 ## Setup
 
-### MySQL Database Configuration
+### Prerequisites
 
-1. **Install MySQL Server**: If you don't have MySQL installed, download and install it from the [official MySQL website](https://dev.mysql.com/downloads/).
+- Python 3.x
+- MySQL server
+- `pip` (Python package installer)
 
-2. **Create the Database and Table**:
+### Installation
 
-   Open the MySQL command line or a MySQL client (such as MySQL Workbench) and execute the following commands to create the database and the `files` table:
+1. **Clone the Repository:**
 
-   ```sql
-   CREATE DATABASE keylogger;
-   USE keylogger;
+    ```sh
+    git clone https://github.com/your-username/your-repo.git
+    cd your-repo
+    ```
 
-   CREATE TABLE files (
-       id INT AUTO_INCREMENT PRIMARY KEY,
-       filename VARCHAR(255) NOT NULL,
-       file_data LONGBLOB NOT NULL,
-       upload_date DATE NOT NULL,
-       upload_time TIME NOT NULL
-   );
+2. **Install the Required Python Packages:**
+
+    Ensure you have `pip` installed. Then, install the required packages using the `requirements.txt` file:
+
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+3. **Setup MySQL Database:**
+
+    - Create a MySQL database named `keylogger`.
+    - Create a table named `files` with the following structure:
+
+      ```sql
+      CREATE TABLE files (
+          id INT AUTO_INCREMENT PRIMARY KEY,
+          filename VARCHAR(255) NOT NULL,
+          file_data LONGBLOB NOT NULL,
+          upload_date DATE NOT NULL,
+          upload_time TIME NOT NULL
+      );
+      ```
+
+4. **Configure Email and Database Credentials:**
+
+    - Open the Python script and locate the email and MySQL configuration section.
+    - Replace the placeholders with your actual email and database credentials.
+
+    ```python
+    # Email credentials
+    email_address = "your-email@gmail.com"
+    password = "your-email-password"
+    toaddr = "recipient-email@gmail.com"
+
+    # MySQL credentials
+    connection = mysql.connector.connect(
+        host="localhost",
+        user="your-mysql-username",
+        password="your-mysql-password",
+        database="keylogger"
+    )
+    ```
+
+### Running the Keylogger
+
+Run the Python script to start the keylogger:
+
+```sh
+python keylogger.py
+
 
 # Important Notes:
 
