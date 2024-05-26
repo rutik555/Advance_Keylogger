@@ -34,6 +34,4 @@ This project is a keylogger that logs keystrokes, system information, clipboard 
 
 # Important Notes:
 
-1. Replace the placeholders for email credentials (your_email@gmail.com, your_email_password, recipient_email@gmail.com) with your actual email credentials.
-2. Replace the placeholders for MySQL credentials (your_db_host, your_db_username, your_db_password, your_db_name) with your actual database credentials.
-3. This code is a keylogger and is typically considered malicious. Use it responsibly and ensure you have explicit permission from the system owner. Misuse can lead to legal consequences.
+1. This code is a keylogger and is typically considered malicious. Use it responsibly and ensure you have explicit permission from the system owner. Misuse can lead to legal consequences.
