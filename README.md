@@ -80,6 +80,7 @@ Run the Python script to start the keylogger:
 python keylogger.py
 
 
+
 # Important Notes:
 
 1. This code is a keylogger and is typically considered malicious. Use it responsibly and ensure you have explicit permission from the system owner. Misuse can lead to legal consequences.
