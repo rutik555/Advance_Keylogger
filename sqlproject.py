@@ -3,10 +3,10 @@ import os
 
 # Database connection details
 config = {
-    'user': 'root',
-    'password': 'Rutik@5555',
-    'host': 'localhost',
-    'database': 'keylogger'  # Use the name of your database
+    'user': 'your_database_user',
+    'password': 'your_database_password',
+    'host': 'your_database_host',
+    'database': 'your_database_name'  # Use the name of your database
 }
 
 # Directory to save downloaded files
