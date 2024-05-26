@@ -77,3 +77,7 @@ This project implements a keylogger that logs keystrokes, clipboard data, screen
 ### Security and Privacy :
 
 1. This code is a keylogger and is typically considered malicious. Use it responsibly and ensure you have explicit permission from the system owner. Misuse can lead to legal consequences.
+
+### Disclaimer
+
+This project is provided for educational purposes only. The author is not responsible for any misuse or damage caused by this software. Unauthorized use of this software to capture or monitor others' data is illegal and unethical. By using this software, you agree to use it only for lawful purposes and in accordance with the applicable laws and regulations.
