@@ -72,13 +72,6 @@ This project implements a keylogger that logs keystrokes, clipboard data, screen
     )
     ```
 
-### Running the Keylogger
-
-Run the Python script to start the keylogger:
-
-```sh
-python keylogger.py
-
 
 
 ### Important Notes:
