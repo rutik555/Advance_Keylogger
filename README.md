@@ -25,7 +25,7 @@ This project implements a keylogger that logs keystrokes, clipboard data, screen
 1. **Clone the Repository:**
 
     ```sh
-    [git clone https://github.com/rutik555/Advance_Keylogger.git
+    git clone https://github.com/rutik555/Advance_Keylogger.git
     cd your-repo
     ```
 
