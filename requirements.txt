@@ -1,1 +1,8 @@
+mysql-connector-python==8.0.32
+pynput==1.7.6
+sounddevice==0.4.4
+scipy==1.7.1
+Pillow==8.4.0
+cryptography==3.4.8
+requests==2.26.0
 
